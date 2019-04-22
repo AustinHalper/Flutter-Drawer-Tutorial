@@ -1,24 +1,4 @@
-import 'package:flutter/material.dart';
 
-import './page.dart';
-
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => new _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-
-  String currentProfilePic = "https://avatars3.githubusercontent.com/u/16825392?s=460&v=4";
-  String otherProfilePic = "https://yt3.ggpht.com/-2_2skU9e2Cw/AAAAAAAAAAI/AAAAAAAAAAA/6NpH9G8NWf4/s900-c-k-no-mo-rj-c0xffffff/photo.jpg";
-
-  void switchAccounts() {
-    String picBackup = currentProfilePic;
-    this.setState(() {
-      currentProfilePic = otherProfilePic;
-      otherProfilePic = picBackup;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
